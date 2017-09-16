@@ -1,0 +1,98 @@
+class LoginServerPackets():
+    RequestAuthentication,  \
+    SendClientInfo  \
+    =range(2)
+class LoginClientPackets():
+    SendAuthentication, \
+    NewAuthentication  \
+    =range(2)
+    
+class ClientPackets:
+    Login,  \
+    SendCreateChar,  \
+    SendMeneNameConfirm, \
+    LatencyTick, \
+    CreateGuild, \
+    LeaveGuild,  \
+    SendMove,    \
+    StopMove,    \
+    SendFaceTarget,  \
+    PlayerMovePath,  \
+    StopTalkWithNPC, \
+    TalkWithNPC, \
+    SendMessage, \
+    RespondGuildInvite,  \
+    GetReport,   \
+    SendReport,  \
+    SolveReport, \
+    DeleteMail,  \
+    RespondPartyInvite,  \
+    SendFightReady,  \
+    SendAttack,  \
+    SendHealMenes,   \
+    SendBuyItem, \
+    ThrowES, \
+    ChangeDefaultMene,   \
+    SendLeaveMatch  \
+    =range(26)
+class ServerPackets:
+    RequestAuth,    \
+    CreateCharInit, \
+    SendChar,  \
+    CreateMeneInit,  \
+    LatencyTick, \
+    ErrorMsg,    \
+    SendGuildmembers,    \
+    SendJoinedGuild, \
+    SendNpcsFromMap, \
+    SendNpcMove, \
+    SendNpcDir,  \
+    SendRefreshName, \
+    GuildMemberPromoted, \
+    SendLeaveGuild,  \
+    PlayerMove,  \
+    PlayerMoveNext,  \
+    PlayerMoveStop,  \
+    PlayerMoveReal,  \
+    PlayerDirection, \
+    PlayerMovePath,  \
+    SendCharsFromMap,    \
+    SendPlayerConnect,   \
+    SendPlayerDisconnect,    \
+    PlayerWhisper,   \
+    PlayerGuildMsg,  \
+    PlayerChatMsg,   \
+    SendIgnores, \
+    RemoveIgnore,    \
+    SendFriends, \
+    RemoveFriend,    \
+    FriendLoggedIn,  \
+    FriendLoggedOut,    \
+    GuildMemberLogged,   \
+    SendGuildInvite, \
+    GuildMemberKicked,   \
+    PlayerTeleportLeave, \
+    PlayerTeleportSelf,  \
+    PlayerTeleportJoin,  \
+    Banned,  \
+    SendGetReport,   \
+    SendMails,   \
+    SendPartyInvite,    \
+    PlayerPartyMsg,  \
+    SendPlayerJoinsParty,    \
+    SendPlayerLeavesParty,   \
+    SendMenes,   \
+    StartFight,  \
+    SendFightTriggerToMap,   \
+    SendAttack,  \
+    XpReceived,  \
+    EndMatch,    \
+    HealMenes,   \
+    MeneDies,    \
+    SendItems,   \
+    SendMoneyUpdate, \
+    ThrowES, \
+    ChangeFightMene, \
+    InitiateMeneSelect,  \
+    MoneyReceived   \
+    =range(59)
